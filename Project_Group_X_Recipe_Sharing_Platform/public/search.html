@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Search Recipes | Recipe Share</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="/">Recipe Share</a>
+  <nav aria-label="Main">
+    <a href="/">Home</a>
+    <a href="/search.html" aria-current="page">Search</a>
+    <a href="/login.html">Login</a>
+    <a href="/signup.html">Sign Up</a>
+  </nav>
+</header>
+  <main>
+    <h1>Find a recipe</h1>
+    <form id="search-form" class="search-panel" role="search">
+      <div class="field field--wide">
+        <label for="q">Recipe title</label>
+        <input id="q" name="q" type="search" maxlength="100" placeholder="e.g. tacos, curry, pancakes" autocomplete="off">
+      </div>
+      <div class="field">
+        <label for="ingredient">Ingredient</label>
+        <input id="ingredient" name="ingredient" type="text" maxlength="100" placeholder="e.g. garlic" autocomplete="off">
+      </div>
+      <div class="field">
+        <label for="cuisine">Cuisine</label>
+        <select id="cuisine" name="cuisine"><option value="">Any cuisine</option></select>
+      </div>
+      <fieldset class="field field--wide">
+        <legend>Meal type</legend>
+        <div id="meal-types" class="chips"></div>
+      </fieldset>
+      <div class="actions">
+        <button type="submit">Search</button>
+        <button type="reset">Clear</button>
+      </div>
+    </form>
+    <p id="status" class="status" role="status" aria-live="polite"></p>
+    <section id="results" class="card-grid" aria-label="Search results"></section>
+  </main>
+<script type="module" src="/js/search.js"></script>
+</body>
+</html>
