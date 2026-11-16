@@ -5,7 +5,7 @@ Community recipe site built with Node.js, Express, and PostgreSQL.
 ## Phase 1 status
 | Area | Owner | Files |
 |---|---|---|
-| Search page, keyword search, cuisine / meal-type filters, seed data, recipe details view  | `public/search.html`, `public/recipe.html`, `public/js/*`, `server/routes/search.js`, `server/routes/recipes.js`, `db/seed.js`, `db/seed-data.js` |
+| Search page, keyword search, cuisine / meal-type filters, seed data, recipe details view  | Brenden Cabrera |`public/search.html`, `public/recipe.html`, `public/js/*`, `server/routes/search.js`, `server/routes/recipes.js`, `db/seed.js`, `db/seed-data.js` |
 | Home page, recipe cards, submission form | Luey Diaz | `public/index.html` is a placeholder until merged |
 | Database design, Express config, auth, recipe APIs | Jasper Careless | `db/schema.sql`, `server/db.js`, `server/index.js` are stand-ins until merged |
 
