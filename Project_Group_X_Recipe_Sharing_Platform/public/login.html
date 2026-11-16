@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login - RecipeShare</title>
+  <style>
+    body { font-family: sans-serif; background: #f7f6f2; padding: 50px; }
+    form { background: white; padding: 24px; max-width: 320px; margin: auto; border-radius: 8px; border: 1px solid #ddd; }
+    input, button { width: 100%; padding: 10px; margin: 8px 0; box-sizing: border-box; }
+    button { background: #435b48; color: white; border: none; border-radius: 5px; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <form action="/api/auth/login" method="POST">
+    <h2>Login</h2>
+    <input type="email" name="email" placeholder="Email" required>
+    <input type="password" name="password" placeholder="Password" required>
+    <button type="submit">Log In</button>
+    <p><a href="/signup.html">Create an account</a></p>
+  </form>
+</body>
+</html>
