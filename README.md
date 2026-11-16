@@ -5,7 +5,7 @@ Community recipe site built with Node.js, Express, and PostgreSQL.
 ## Phase 1 status
 | Area | Owner | Files |
 |---|---|---|
-| Search page, keyword search, cuisine / meal-type filters, seed data, recipe details view | Brenden Cabrera | `public/search.html`, `public/recipe.html`, `public/js/*`, `server/routes/search.js`, `server/routes/recipes.js`, `db/seed.js`, `db/seed-data.js` |
+| Search page, keyword search, cuisine / meal-type filters, seed data, recipe details view  | `public/search.html`, `public/recipe.html`, `public/js/*`, `server/routes/search.js`, `server/routes/recipes.js`, `db/seed.js`, `db/seed-data.js` |
 | Home page, recipe cards, submission form | Luey Diaz | `public/index.html` is a placeholder until merged |
 | Database design, Express config, auth, recipe APIs | Jasper Careless | `db/schema.sql`, `server/db.js`, `server/index.js` are stand-ins until merged |
 
@@ -21,7 +21,7 @@ Community recipe site built with Node.js, Express, and PostgreSQL.
 5. `npm run seed` (creates tables and loads 10 example recipes; safe to re-run)
 6. `npm start`, then open http://localhost:3000/search.html
 
-## API (Brenden's routes)
+## API
 - `GET /api/search?q=&ingredient=&cuisine=&mealType=` : all params optional, returns `{ count, results }`
 - `GET /api/search/filters` : cuisines and meal types that exist in the database
 - `GET /api/recipes/:id` : one recipe with ingredients and instruction steps (400 invalid id, 404 not found)
